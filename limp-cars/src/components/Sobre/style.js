@@ -55,16 +55,18 @@ export const Conteudo = styled.div`
 `;
 
 export const Description = styled.p`
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   color: #e5e7eb;
 `;
 
 export const VideosGrid = styled.div`
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 20px;
+  width: 100%;
+  max-width: 1400px;
 `;
 
 export const VideoCard = styled.div`
@@ -76,7 +78,7 @@ export const VideoCard = styled.div`
 
 export const Video = styled.video`
   width: 100%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
   display: block;
 `;
