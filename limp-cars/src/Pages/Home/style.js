@@ -8,22 +8,6 @@ export const Inicio = styled.div`
     justify-content: center;
     position: relative;
     overflow: hidden;
-    
-    ::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.3) 0%,
-            rgba(0, 0, 0, 0.5) 50%,
-            rgba(0, 0, 0, 0.7) 100%
-        );
-        z-index: 1;
-    }
 `;
 
 
@@ -93,7 +77,7 @@ export const HeroTitle = styled.h1`
     line-height: 1.2;
     font-family: 'Inter Tight', sans-serif;
     color: #ffffff;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8), 0 2px 10px rgba(0, 0, 0, 0.6);
 
     @media (max-width: 768px) {
         font-size: 42px;
@@ -107,12 +91,14 @@ export const HeroTitle = styled.h1`
 export const HeroDescription = styled.p`
     font-size: 18px;
     line-height: 1.8;
-    opacity: 0.9;
+    opacity: 0.95;
     margin: 0 0 40px 0;
     font-family: 'Inter Tight', sans-serif;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    color: #ffffff;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7), 0 1px 5px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 768px) {
         font-size: 16px;

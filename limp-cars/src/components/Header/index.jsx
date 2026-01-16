@@ -1,5 +1,5 @@
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import {
   Headers,
   Container,
@@ -26,6 +26,19 @@ const Header = () => {
   const closeMenu = () => {
     setIsMenuOpen(false)
   }
+
+  // Bloquear scroll quando menu está aberto
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
+    
+    return () => {
+      document.body.style.overflow = "unset"
+    }
+  }, [isMenuOpen])
 
   return (
     <>
@@ -87,7 +100,7 @@ const Header = () => {
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </CloseButton>
-        <MobileLinks>
+        <MobileLinks $isOpen={isMenuOpen}>
           <a href="#home" onClick={closeMenu}>
             Inicio
           </a>
@@ -107,7 +120,7 @@ const Header = () => {
             Contato
           </a>
         </MobileLinks>
-        <MobileAgendar href="#contato" onClick={closeMenu}>
+        <MobileAgendar href="#contato" onClick={closeMenu} $isOpen={isMenuOpen}>
           Agendar
         </MobileAgendar>
       </MobileMenu>
