@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import {
   Subtitle,
@@ -19,6 +19,37 @@ import video2 from "../../assets/videos/video2.mp4";
 import video3 from "../../assets/videos/video3.mp4";
 
 const Sobre = () => {
+  const video1Ref = useRef(null);
+  const video2Ref = useRef(null);
+  const video3Ref = useRef(null);
+
+  useEffect(() => {
+    // Garantir que os vídeos iniciem automaticamente
+    const playVideos = async () => {
+      const videos = [video1Ref.current, video2Ref.current, video3Ref.current];
+      
+      for (const video of videos) {
+        if (video) {
+          try {
+            video.muted = true;
+            await video.play();
+          } catch (error) {
+            // Se falhar, tenta novamente após um pequeno delay
+            setTimeout(async () => {
+              try {
+                await video.play();
+              } catch (e) {
+                console.log("Autoplay bloqueado pelo navegador");
+              }
+            }, 100);
+          }
+        }
+      }
+    };
+
+    playVideos();
+  }, []);
+
   return (
     <>
       <Section id="sobre">
@@ -41,13 +72,37 @@ const Sobre = () => {
         </Container>
         <VideosGrid>
           <VideoCard>
-            <Video src={video1} controls loop muted />
+            <Video 
+              ref={video1Ref}
+              src={video1} 
+              controls 
+              loop 
+              muted 
+              autoPlay 
+              playsInline 
+            />
           </VideoCard>
           <VideoCard>
-            <Video src={video2} controls loop muted />
+            <Video 
+              ref={video2Ref}
+              src={video2} 
+              controls 
+              loop 
+              muted 
+              autoPlay 
+              playsInline 
+            />
           </VideoCard>
           <VideoCard>
-            <Video src={video3} controls loop muted />
+            <Video 
+              ref={video3Ref}
+              src={video3} 
+              controls 
+              loop 
+              muted 
+              autoPlay 
+              playsInline 
+            />
           </VideoCard>
         </VideosGrid>
       </Section>

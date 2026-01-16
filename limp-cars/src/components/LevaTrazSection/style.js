@@ -202,10 +202,13 @@ export const BenefitItem = styled.li`
 export const BenefitIcon = styled.span`
   width: 25px;
   height: 25px;
+  min-width: 25px;
   border-radius: 999px;
   background-color: #32DA13;
+  display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+  flex-shrink: 0;
 `;
 
 export const BenefitLabel = styled.span`

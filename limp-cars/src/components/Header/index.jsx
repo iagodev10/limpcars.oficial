@@ -91,7 +91,7 @@ const Header = () => {
             height="20"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="currentColor"
+            stroke="rgba(255, 255, 255, 0.8)"
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"

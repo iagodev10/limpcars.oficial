@@ -1,0 +1,16 @@
+:root {
+    color-scheme: light;
+}
+
+html {
+    color-scheme: light;
+}
+
+body {
+    color-scheme: light;
+}
+
+* {
+    color-scheme: light !important;
+}
+  

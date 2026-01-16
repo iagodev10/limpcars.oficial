@@ -93,7 +93,7 @@ export default function LevaTrazSection() {
             <BenefitsList>
               <BenefitItem>
                 <BenefitIcon>
-                  <FaCheck fontSize={20} color="black" align="center" />
+                  <FaCheck size={14} color="#000000" />
                 </BenefitIcon>
                 <BenefitLabel>Economia de tempo</BenefitLabel>
                 <BenefitDescription>
@@ -103,7 +103,7 @@ export default function LevaTrazSection() {
 
               <BenefitItem>
                 <BenefitIcon>
-                  <FaCheck fontSize={20} color="black" align="center" />
+                  <FaCheck size={14} color="#000000" />
                 </BenefitIcon>
                 <BenefitLabel>Comodidade</BenefitLabel>
                 <BenefitDescription>
@@ -113,7 +113,7 @@ export default function LevaTrazSection() {
 
               <BenefitItem>
                 <BenefitIcon>
-                  <FaCheck fontSize={20} color="black" align="center" />
+                  <FaCheck size={14} color="#000000" />
                 </BenefitIcon>
                 <BenefitLabel>Segurança</BenefitLabel>
                 <BenefitDescription>
