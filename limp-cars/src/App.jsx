@@ -2,7 +2,6 @@ import React from 'react'
 import './App.css'
 import Header from './components/Header'
 import Home from './Pages/Home'
-import EliteMatrix from './components/EliteMatrix'
 
 function App() {
 
@@ -10,7 +9,6 @@ function App() {
     <>
       <Header />
       <Home />
-      {/* <EliteMatrix /> */}
     </>
   )
 }

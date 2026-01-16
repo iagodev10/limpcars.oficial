@@ -1,6 +1,6 @@
 import React from "react";
 import { PiHandTapFill } from "react-icons/pi";
-import { FaCheck } from "react-icons/fa6";
+import { FaCheck, FaTruck } from "react-icons/fa";
 
 import {
   Section,
@@ -9,7 +9,6 @@ import {
   BottomGrid,
   HeroCard,
   Tag,
-  TagIcon,
   HeroTitle,
   HeroSubtitle,
   StepsCard,
@@ -40,7 +39,7 @@ export default function LevaTrazSection() {
         <TopGrid>
           <HeroCard image={car}>
             <Tag>
-              <TagIcon />
+              <FaTruck size={14} style={{ marginRight: 6 }} />
               <span>Exclusive Experience</span>
             </Tag>
 
@@ -93,7 +92,9 @@ export default function LevaTrazSection() {
 
             <BenefitsList>
               <BenefitItem>
-                <BenefitIcon><FaCheck fontSize={20} color="black" align="center" /></BenefitIcon>
+                <BenefitIcon>
+                  <FaCheck fontSize={20} color="black" align="center" />
+                </BenefitIcon>
                 <BenefitLabel>Economia de tempo</BenefitLabel>
                 <BenefitDescription>
                   Ideal para sua rotina agitada.
@@ -101,7 +102,9 @@ export default function LevaTrazSection() {
               </BenefitItem>
 
               <BenefitItem>
-                <BenefitIcon><FaCheck fontSize={20} color="black" align="center" /></BenefitIcon>  
+                <BenefitIcon>
+                  <FaCheck fontSize={20} color="black" align="center" />
+                </BenefitIcon>
                 <BenefitLabel>Comodidade</BenefitLabel>
                 <BenefitDescription>
                   Cuidamos de tudo para você.
@@ -109,7 +112,9 @@ export default function LevaTrazSection() {
               </BenefitItem>
 
               <BenefitItem>
-                <BenefitIcon><FaCheck fontSize={20} color="black" align="center" /></BenefitIcon>
+                <BenefitIcon>
+                  <FaCheck fontSize={20} color="black" align="center" />
+                </BenefitIcon>
                 <BenefitLabel>Segurança</BenefitLabel>
                 <BenefitDescription>
                   Seu carro nas mãos de profissionais.
@@ -121,7 +126,16 @@ export default function LevaTrazSection() {
           <CtaCard>
             <PiHandTapFill size={38} color="#32DA13" />
             <CtaText>Tenha mais praticidade no seu dia a dia.</CtaText>
-            <CtaButton>Clique aqui e agende agora</CtaButton>
+            <CtaButton
+              onClick={() =>
+                window.open(
+                  "https://api.whatsapp.com/send/?phone=5534992911990&text&type=phone_number&app_absent=0",
+                  "_blank"
+                )
+              }
+            >
+              Clique aqui e agende agora
+            </CtaButton>
           </CtaCard>
         </BottomGrid>
       </Container>

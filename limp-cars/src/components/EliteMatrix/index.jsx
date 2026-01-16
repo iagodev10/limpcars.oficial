@@ -14,7 +14,7 @@ import luxury from "../../assets/images/luxury.png";
 
 export default function EliteMatrix() {
   return (
-    <Section>
+    <Section id="servicos">
       <Subtitle>ECOSSISTEMA DE SERVIÇOS</Subtitle>
       <Title>Estética Automotiva Premium</Title>
 

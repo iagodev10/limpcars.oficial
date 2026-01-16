@@ -3,6 +3,7 @@ import React from "react";
 import Car from "../../assets/images/luxury.png";
 import EliteMatrix from "../../components/EliteMatrix";
 import LevaTrazSection from "../../components/LevaTrazSection";
+import Sobre from "../../components/Sobre";
 
 import { Inicio, Container, Imagem, Conteudo } from "./style";
 
@@ -20,6 +21,7 @@ const Home = () => {
             </Inicio>
             <EliteMatrix />
             <LevaTrazSection />
+            <Sobre />
         </>
     );
 };

@@ -30,14 +30,14 @@ export const Title = styled.h2`
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  grid-template-rows: repeat(2, minmax(260px, auto));
+  grid-template-columns: 1.4fr 2fr 1fr;
+  grid-template-rows: repeat(2, minmax(300px, auto));
   grid-template-areas:
     "main top top"
     "main bot1 bot2";
   gap: 20px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
 
   /* Target children based on order in index.jsx to assign grid areas */
   & > div:nth-child(1) { grid-area: main; }

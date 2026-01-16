@@ -2,14 +2,27 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   padding: 80px 6% 100px;
-  background-color: #050505;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(57, 255, 20, 0.08) 0%,
+      rgba(57, 255, 20, 0.04) 30%,
+      rgba(57, 255, 20, 0.01) 45%,
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      #14161A 0%,
+      #0A0B0D 60%,
+      #050505 100%
+    );
   display: flex;
   justify-content: center;
 `;
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -41,10 +54,10 @@ export const HeroCard = styled.div`
   overflow: hidden;
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.85),
-      rgba(0, 0, 0, 0.7)
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4)
     ),
-    url(${props => props.image}) center/cover no-repeat;
+    url("${props => props.image}") center/cover no-repeat;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -64,13 +77,6 @@ export const Tag = styled.div`
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #32DA13;
-`;
-
-export const TagIcon = styled.span`
-  width: 18px;
-  height: 18px;
-  border-radius: 999px;
-  background-color: #32DA13;  
 `;
 
 export const HeroTitle = styled.h2`
