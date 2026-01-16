@@ -7,6 +7,11 @@ export const Section = styled.section`
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    padding: 60px 4%;
+  }
+
+
   &::before {
     content: "";
     position: absolute;

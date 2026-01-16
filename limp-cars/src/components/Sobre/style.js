@@ -7,6 +7,10 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 60px 4%;
+  }
 `;
 
 export const Subtitle = styled.span`
@@ -34,6 +38,12 @@ export const Container = styled.div`
   grid-template-columns: 2fr 1fr;
   width: 100%;
   max-width: 1400px;
+  gap: 30px;
+
+  @media (max-width: 968px) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 `;
 
 export const Imagem = styled.img`
@@ -67,6 +77,14 @@ export const VideosGrid = styled.div`
   margin-top: 20px;
   width: 100%;
   max-width: 1400px;
+
+  @media (max-width: 968px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const VideoCard = styled.div`

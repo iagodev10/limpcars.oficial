@@ -7,6 +7,10 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 60px 4%;
+  }
 `;
 
 export const Subtitle = styled.span`

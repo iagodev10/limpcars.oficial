@@ -8,7 +8,7 @@ export const Inicio = styled.div`
     justify-content: center;
     position: relative;
     overflow: hidden;
-
+    
     ::before {
         content: "";
         position: absolute;
@@ -16,7 +16,13 @@ export const Inicio = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        /* background-color: rgba(0, 0, 0, 0.5); */
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.7) 100%
+        );
+        z-index: 1;
     }
 `;
 
@@ -25,27 +31,35 @@ export const Imagem = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 `;
 
 export const Container = styled.div`
     width: 100%;
     height: 100%;
     position: relative;
-    
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const Conteudo = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    position: relative;
+    z-index: 3;
     text-align: center;
     color: #fff;
     width: 100%;
     max-width: 900px;
     padding: 0 20px;
     box-sizing: border-box;
+    
+    @media (max-width: 768px) {
+        padding: 0 15px;
+    }
 `;
 
 export const Subtitle = styled.span`
@@ -57,6 +71,17 @@ export const Subtitle = styled.span`
     display: block;
     margin-bottom: 20px;
     font-family: 'Inter Tight', sans-serif;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
 `;
 
 export const HeroTitle = styled.h1`
@@ -91,6 +116,14 @@ export const HeroDescription = styled.p`
 
     @media (max-width: 768px) {
         font-size: 16px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 24px;
     }
 `;
 
@@ -108,6 +141,16 @@ export const CTAButton = styled.a`
     border-radius: 99px;
     transition: all 0.3s ease;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        padding: 14px 32px;
+        font-size: 13px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 12px 28px;
+        font-size: 12px;
+    }
 
     &:hover {
         transform: translateY(-2px);

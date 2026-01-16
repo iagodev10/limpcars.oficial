@@ -7,6 +7,11 @@ export const Section = styled.section`
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    padding: 60px 4%;
+  }
+`;
+
   &::before {
     content: "";
     position: absolute;
@@ -31,6 +36,10 @@ export const HeaderSection = styled.div`
   margin-bottom: 60px;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const Subtitle = styled.span`
@@ -199,6 +208,11 @@ export const Mapa = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    height: 350px;
+    border-radius: 16px;
+  }
 
   &:hover {
     border-color: rgba(0, 224, 255, 0.3);

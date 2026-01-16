@@ -18,6 +18,10 @@ export const Section = styled.section`
     );
   display: flex;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    padding: 60px 4% 80px;
+  }
 `;
 
 export const Container = styled.div`
