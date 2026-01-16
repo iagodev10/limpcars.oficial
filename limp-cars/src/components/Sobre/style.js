@@ -30,17 +30,54 @@ export const Title = styled.h2`
 `;
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   width: 100%;
   max-width: 1400px;
 `;
 
 export const Imagem = styled.img`
   width: 100%;
-  max-width: 600px;
+  max-width: 90%;
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   object-fit: cover;
 `;
+
+export const Conteudo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: rgba(10, 10, 10, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+`;
+
+export const Description = styled.p`
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e5e7eb;
+`;
+
+export const VideosGrid = styled.div`
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+`;
+
+export const VideoCard = styled.div`
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+`;
+
+export const Video = styled.video`
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+`;
+
