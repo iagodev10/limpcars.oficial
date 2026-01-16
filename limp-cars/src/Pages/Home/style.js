@@ -45,6 +45,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
 `;
 
 export const Conteudo = styled.div`
@@ -56,6 +57,7 @@ export const Conteudo = styled.div`
     max-width: 900px;
     padding: 0 20px;
     box-sizing: border-box;
+    background: transparent;
     
     @media (max-width: 768px) {
         padding: 0 15px;
@@ -90,10 +92,8 @@ export const HeroTitle = styled.h1`
     margin: 0 0 24px 0;
     line-height: 1.2;
     font-family: 'Inter Tight', sans-serif;
-    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.9) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 768px) {
         font-size: 42px;

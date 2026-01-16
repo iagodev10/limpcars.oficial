@@ -119,48 +119,15 @@ export const GalleryItem = styled.div`
   }
 `;
 
-export const PlaceholderImage = styled.div`
+
+
+export const Image = styled.img`
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 
   ${GalleryItem}:hover & {
-    background: linear-gradient(135deg, rgba(0, 224, 255, 0.1) 0%, rgba(0, 224, 255, 0.05) 100%);
-    border-color: rgba(0, 224, 255, 0.3);
-  }
-`;
-
-export const PlaceholderText = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  color: rgba(255, 255, 255, 0.4);
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-
-  svg {
-    width: 48px;
-    height: 48px;
-    color: rgba(0, 224, 255, 0.3);
-  }
-
-  span {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  ${GalleryItem}:hover & {
-    color: rgba(255, 255, 255, 0.6);
-
-    svg {
-      color: rgba(0, 224, 255, 0.6);
-    }
+    transform: scale(1.05);
   }
 `;

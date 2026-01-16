@@ -10,7 +10,6 @@ export const Section = styled.section`
   @media (max-width: 768px) {
     padding: 60px 4%;
   }
-`;
 
   &::before {
     content: "";

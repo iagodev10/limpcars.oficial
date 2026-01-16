@@ -14,14 +14,14 @@ const Home = () => {
     return (
         <>
             <Inicio id="home">
+                <Imagem src={Car} alt="" />
                 <Container>
-                    <Imagem src={Car} alt="" />
 
                     <Conteudo>
                         <Subtitle>Estética Automotiva Premium</Subtitle>
                         <HeroTitle>Transforme seu veículo em uma obra de arte</HeroTitle>
                         <HeroDescription>
-                            Cuidamos do seu carro com produtos de alta tecnologia e atenção aos detalhes. 
+                            Cuidamos do seu carro com produtos de alta tecnologia e atenção aos detalhes.
                             Seu veículo merece o melhor tratamento.
                         </HeroDescription>
                         <CTAButton href="#contato">Agendar Serviço</CTAButton>

@@ -7,13 +7,20 @@ import {
   Texto,
   GalleryGrid,
   GalleryItem,
-  PlaceholderImage,
-  PlaceholderText,
+  Image,
 } from "./style";
 
+import foto1 from "../../assets/images/foto1.png";
+import foto2 from "../../assets/images/foto2.png";
+import foto3 from "../../assets/images/foto3.png";
+import foto4 from "../../assets/images/foto4.png";
+import foto5 from "../../assets/images/foto5.png";
+import foto6 from "../../assets/images/foto6.png";
+import foto7 from "../../assets/images/foto7.png";
+import foto8 from "../../assets/images/foto8.png";
+
 const Galeria = () => {
-  // Array de placeholders - você pode substituir depois pelas imagens reais
-  const placeholderItems = Array.from({ length: 9 }, (_, i) => i + 1);
+  const images = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8];
 
   return (
     <Section id="galeria">
@@ -27,16 +34,9 @@ const Galeria = () => {
       </HeaderSection>
 
       <GalleryGrid>
-        {placeholderItems.map((item) => (
-          <GalleryItem key={item}>
-            <PlaceholderImage>
-              <PlaceholderText>
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 16L8.586 11.414C9.367 10.633 10.633 10.633 11.414 11.414L16 16M14 14L15.586 12.414C16.367 11.633 17.633 11.633 18.414 12.414L20 14M14 8H14.01M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <span>Imagem {item}</span>
-              </PlaceholderText>
-            </PlaceholderImage>
+        {images.map((img, index) => (
+          <GalleryItem key={index}>
+            <Image src={img} alt={`Trabalho realizado ${index + 1}`} />
           </GalleryItem>
         ))}
       </GalleryGrid>
