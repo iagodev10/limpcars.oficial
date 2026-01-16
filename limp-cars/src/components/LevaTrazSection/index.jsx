@@ -30,7 +30,7 @@ import {
   CtaButton,
 } from "./style";
 
-import car from "../../assets/images/luxury.png";
+import car from "../../assets/images/banner4.png";
 
 export default function LevaTrazSection() {
   return (

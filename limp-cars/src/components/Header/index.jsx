@@ -23,8 +23,10 @@ const Header = () => {
                         <a href="#contato">Contato</a>
                     </Links>
 
-                    <Agendar>
-                        Agendar
+                    <Agendar onClick={() => window.location.href = "#contato"}>
+                        <a href="#contato" style={{ textDecoration: "none", color: "black" }}>
+                            Agendar
+                        </a>
                     </Agendar>
                 </Container>
             </Headers>

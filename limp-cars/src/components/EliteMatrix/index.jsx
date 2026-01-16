@@ -8,9 +8,11 @@ import {
   Title
 } from "./style";
 
-import luxury from "../../assets/images/luxury.png";
-// import descontaminacao from "../../assets/images/descontaminacao.png";
-// import higienizacao from "../../assets/images/higienizacao.png";
+import luxury from "../../assets/images/banner1.png";
+import luxury2 from "../../assets/images/banner2.png";
+import luxury3 from "../../assets/images/banner3.png";
+import luxury4 from "../../assets/images/banner4.png";
+
 
 export default function EliteMatrix() {
   return (
@@ -20,7 +22,7 @@ export default function EliteMatrix() {
 
       <Grid>
         {/* Card principal */}
-        <MainCard image={luxury}>
+        <MainCard image={luxury2}>
           <h3>Proteção da Pintura Premium</h3>
           <p>
             Aplicação de proteção que preserva o brilho, facilita a
@@ -38,7 +40,7 @@ export default function EliteMatrix() {
         </ImageCard>
 
         {/* Small card 2 */}
-        <ImageCard image={luxury}>
+        <ImageCard image={luxury3}>
           <h4>Higienização Interna Premium</h4>
           <p>
             Limpeza detalhada do interior para máximo conforto e estética.
