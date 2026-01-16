@@ -1,6 +1,6 @@
 import React from "react";
 
-import Car from "../../assets/images/banner4.png";
+import Car from "../../assets/images/banner3.png";
 import EliteMatrix from "../../components/EliteMatrix";
 import LevaTrazSection from "../../components/LevaTrazSection";
 import Sobre from "../../components/Sobre";
